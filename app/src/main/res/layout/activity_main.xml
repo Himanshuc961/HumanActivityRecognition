@@ -13,7 +13,7 @@
         android:id="@+id/xText"
         android:layout_alignParentTop="true"
         android:layout_centerHorizontal="true"
-        android:layout_marginTop="60dp" />
+        android:layout_marginTop="11dp" />
 
     <TextView
         android:layout_width="wrap_content"
@@ -35,34 +35,63 @@
         android:layout_alignEnd="@+id/yText"
         android:layout_marginTop="30dp" />
 
-    <com.jjoe64.graphview.GraphView
-        android:layout_width="match_parent"
-        android:layout_height="200dip"
-        android:id="@+id/graph"
-        android:layout_below="@+id/zText"
-
-        android:layout_marginTop="30dp" />
-
-    <Button
-        android:id="@+id/btnStart"
+    <TextView
+        android:id="@+id/textView"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:onClick="startfn"
-        android:text="START"
-        android:layout_marginRight="28dp"
-        android:layout_marginStart="34dp"
-        android:layout_below="@+id/graph"
-        android:layout_alignParentStart="true" />
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="Gy"
+        android:layout_centerVertical="true"
+        android:layout_alignStart="@+id/textView6" />
 
-    <Button
-        android:id="@+id/btnStop"
+    <TextView
+        android:id="@+id/textView2"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginLeft="8dp"
-        android:layout_marginStart="27dp"
-        android:onClick="stopfn"
-        android:text="STOP"
-        android:layout_below="@+id/graph"
-        android:layout_toEndOf="@+id/xText" />
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="Gz"
+        android:layout_marginTop="23dp"
+        android:layout_below="@+id/textView"
+        android:layout_alignStart="@+id/textView" />
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:layout_marginBottom="19dp"
+        android:text="Mx"
+        android:layout_above="@+id/textView4"
+        android:layout_alignStart="@+id/textView2" />
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="19dp"
+        android:text="My"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:layout_above="@+id/textView5"
+        android:layout_alignStart="@+id/textView3" />
+
+    <TextView
+        android:id="@+id/textView5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignStart="@+id/textView4"
+        android:layout_marginBottom="10dp"
+        android:text="Mz"
+        android:textAppearance="?android:attr/textAppearanceLarge" />
+
+    <TextView
+        android:id="@+id/textView6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="Gx"
+        android:layout_marginBottom="23dp"
+        android:layout_above="@+id/textView"
+        android:layout_toStartOf="@+id/zText" />
 
 </RelativeLayout>
